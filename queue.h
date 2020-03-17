@@ -2,7 +2,7 @@
 #define _QUEUE_H_
 #include <stdbool.h>
 
-typedef struct item //结构体
+typedef struct item
 {
     long arrive;
     int processtime;
@@ -10,7 +10,7 @@ typedef struct item //结构体
 
 #define MAXQUEUE 10
 
-typedef struct node //结构体
+typedef struct node
 {
     Item item;
     struct node *next;
@@ -18,9 +18,9 @@ typedef struct node //结构体
 
 typedef struct queue
 {
-    Node *front;
-    Node *rear;
-    int items;
+    Node *front; //指向队列首项的指针
+    Node *rear;  //指向队列尾项的指针
+    int items;   //队列中的项数
 } Queue;
 
 void InitializeQueue(Queue *pq);      //初始化队列

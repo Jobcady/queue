@@ -1,3 +1,4 @@
+/* 与 queue.c  一起编译*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
