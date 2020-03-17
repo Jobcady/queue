@@ -23,7 +23,7 @@ int main(void)
     long line_wait = 0;     //队列累计的等待时间
 
     InitializeQueue(&line);
-    srand((unsigned int)time(0)); //rand随机初始化
+    srand((unsigned int)time(0));
     puts("Case Study: Sigmund Lander's Advices Booth");
     puts("Enter the number of simulation hours: ");
     scanf("%d", &hours);
