@@ -10,7 +10,7 @@ typedef struct item
 
 #define MAXQUEUE 10
 
-typedef struct node
+typedef struct node //结构体
 {
     Item item;
     struct node *next;
