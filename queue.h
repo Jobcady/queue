@@ -2,7 +2,7 @@
 #define _QUEUE_H_
 #include <stdbool.h>
 
-typedef struct item
+typedef struct item //结构体
 {
     long arrive;
     int processtime;
