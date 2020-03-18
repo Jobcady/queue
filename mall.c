@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "queue.h"
-#define MIN_PER_HR 60.0
+#define MIN_PER_HR 60.0 //注释
 
 bool newcustomer(double x);   //是否有新顾客到来
 Item customertime(long when); //设置顾客参数
