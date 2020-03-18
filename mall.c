@@ -1,9 +1,10 @@
-/* 与 queue.c  一起编译*/
+/*mall.c -- 使用queue接口
+ 与 queue.c  一起编译*/
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <stdlib.h> //提高rand()和srand()的原型
+#include <time.h>   //提供time()的原型
 #include "queue.h"
-#define MIN_PER_HR 60.0 //注释
+#define MIN_PER_HR 60.0
 
 bool newcustomer(double x);   //是否有新顾客到来
 Item customertime(long when); //设置顾客参数

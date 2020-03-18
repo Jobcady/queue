@@ -1,3 +1,4 @@
+/* queue.h -- queue的接口 */
 #ifndef _QUEUE_H_
 #define _QUEUE_H_
 #include <stdbool.h>

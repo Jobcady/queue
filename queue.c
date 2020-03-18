@@ -1,3 +1,4 @@
+/* queue.c --queue类型的实现 */
 #include <stdio.h>
 #include <stdlib.h>
 #include "queue.h"
@@ -41,11 +42,11 @@ bool EnQueue(Item item, Queue *pq)
     CopyToNode(item, pnew);
     pnew->next = NULL;
     if (QueueIsEmpty(pq))
-        pq->front = pnew;
+        pq->front = pnew; //项位于队列的首端
     else
-        pq->rear->next = pnew;
-    pq->rear = pnew;
-    pq->items++;
+        pq->rear->next = pnew; //链接到队尾的尾端
+    pq->rear = pnew;           //记录队列尾端的位置
+    pq->items++;               //队列项数加1
 
     return true;
 }
